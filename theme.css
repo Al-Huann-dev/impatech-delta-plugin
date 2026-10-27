@@ -1,0 +1,172 @@
+* {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+:root {
+  --delta-paper: var(--delta-background);
+  --delta-env-bg: var(--delta-background);
+  --delta-env-border: var(--delta-accent);
+
+  --delta-secondary: #CCC4AE;
+  --delta-accent: #000000;
+  --delta-background: #FFFFFF;
+  --delta-white: var(--delta-background);
+
+  --delta-green: #BDFF8A;
+  --delta-yellow: #EBF479;
+  --delta-pink: #FF89EE;
+  --delta-orange: #FFC554;
+
+  --delta-radius: 8px;
+  --delta-hairline: 1px;
+}
+
+delta-title {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -4.2px;
+  font-weight: 500;
+  font-size: 96px;
+
+}
+
+delta-eyebrow {
+  display: inline-block;
+  padding: 9px;
+  margin-bottom: 4px;
+
+  font-family: Arial;
+  font-size: 18px;
+  letter-spacing: -0.72px;
+  line-height: 1;
+
+  font-weight: 600;
+  color: var(--delta-black);
+  text-transform: none;
+
+  background-color: var(--delta-secondary);
+  width: auto;
+}
+
+delta-eyebrow + delta-eyebrow {
+  margin-left: -5px;
+}
+
+delta-eyebrow[rounded="true"]{
+  border-radius: 99px;
+}
+
+delta-eyebrow[color="yellow"] {
+  background-color: var(--delta-yellow);
+}
+delta-eyebrow[color="green"] {
+  background-color: var(--delta-green);
+}
+delta-eyebrow[color="pink"] {
+  background-color: var(--delta-pink);
+}
+delta-eyebrow[color="orange"] {
+  background-color: var(--delta-orange);
+}
+delta-eyebrow[color="white"] {
+  background-color: var(--delta-white);
+}
+
+delta-p, 
+p {
+  font-family: sans-serif;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+delta-b,
+b {
+  font-weight: 600;
+}
+
+delta-equations,
+delta-equation {
+  font-family: serif;
+}
+
+delta-definition {
+
+}
+
+delta-section {
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -2.1px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 0.85;
+}
+
+delta-definition .box-tag {
+  background-color: var(--delta-secondary);
+  /* border: var(--delta-hairline) var(--delta-env-border) solid; */
+  border-radius: 99px;
+}
+
+delta-theorem {
+  background-color: var(--delta-background);
+  /* border: none; */
+}
+
+delta-theorem .box-tag {
+  background-color: var(--delta-yellow);
+  /* border: none; */
+  border: var(--delta-hairline) var(--delta-env-border) solid;
+  border-radius: 99px;
+}
+
+.box-tag {
+  display: block;
+  padding: 8px;
+  border-radius: 0px;
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 0.9em;
+  line-height: 1;
+  letter-spacing: calc(1em * -0.045);
+  text-transform: capitalize;
+
+  background-color: var(--delta-white);
+  color: var(--delta-black);
+}
+
+span.num { }
+
+delta-equations[num]::after,
+delta-equation[num]::after {
+  font-size: 11px;
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: var(--delta-accent);
+
+}
+
+
+.box-meta-item {
+  font-size: 24px;
+}
+
+.k {
+  font-size: 0.8em;
+  letter-spacing: calc(1em * -0.045);
+  font-weight: 600;
+
+  color: var(--delta-accent);
+  
+  text-transform: capitalize;
+}
+
+.v {
+  font-size: 0.8em;
+}

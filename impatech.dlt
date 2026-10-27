@@ -1,0 +1,63 @@
+<document lang="pt-BR" theme="theme.css" type="paper">
+  <title>Curso Completo de Análise</title>
+  <meta>
+    <meta-item key="autor">Roberto Imbuzeiro</meta-item>
+  </meta>
+  <section id="sec:intro" numbered="false">
+    <eyebrow>Análise</eyebrow>
+    <eyebrow color="pink" rounded="true">Pílula</eyebrow>
+    <title>
+      Funções concavas,
+      convexas e diferenciabilidade
+    </title>
+
+    Essa parte do trabalho é super imporante para <m>f</m>, definiremos o que
+    é uma função <b>concava</b> e <b>convexa</b>
+
+    <definition id="def:concava">
+      <title>Função concava</title>
+
+      <equations id="eq:concava">
+        & \forall x_1, x_2, \forall t \in [0, 1]:\\
+        & f((1 - t)x_1 + tx_2) \leq (1 - t)f(x_1) + tf(x_2)
+      </equations>
+    </definition> 
+
+    Para fazermos os exercícios usaremos fortemente alguns teoremas:
+
+    <theorem id="thm:criterio-convexa">
+      <title>Equivalência da Convexidade</title>
+
+      <equation id="eq:criterio-convexa">
+        f \text{\;é convexa} \iff f' \text{\;é crescente}
+      </equation>
+
+      <proof>Temos aqui alguma coisa</proof>
+    </theorem>
+  </section>
+
+  <section id="sec:integrais-riemann" numbered="false">
+    <eyebrow color="green">Discussão</eyebrow>
+    <eyebrow rounded="true" color="pink">Teoremas</eyebrow>
+    <title>Integrais Riemanniana</title>
+
+    <definition id="def:soma-riemann">
+      <title>Somas de Riemann</title>
+
+      <equations id="eq:soma-rimeann">
+        s(f, P) &\stackrel{\text{def}}{=} \sum_{i = 1}^{n}t_i^P - t_{i - 1}^P \inf_{s_i \in [t_i^P - t_{i - 1}^P]}f(s_i) \\
+        S(f, P) &\stackrel{\text{def}}{=} \sum_{i = 1}^{n}t_i^P - t_{i - 1}^P \sup_{u_i \in [t_i^P - t_{i - 1}^P]}f(u_i)
+      </equations>
+      
+    </definition>
+
+    <definition id="def:criterio-soma-riemann">
+      <!-- <title></title> -->
+      Dizemos que uma função <m>f</m> é <b>RI</b> se,
+      <m>inf A(f) = sup A(f)</m>. Neste caso,
+
+      <equation id="eq:integral-criterio">\int_a^b f(x)dx = \sup{L(f)}</equation>
+      
+    </definition>
+  </section>
+</document>
